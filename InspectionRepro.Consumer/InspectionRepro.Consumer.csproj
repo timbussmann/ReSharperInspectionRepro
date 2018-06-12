@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="../InspectionRepro.Source/**/*.cs" Exclude="../InspectionRepro.Source/obj/**/*.*"></Compile>
+    <Compile Remove="../InspectionRepro.Source/NonSharedClass.cs" />
+  </ItemGroup>
+
+
+</Project>
